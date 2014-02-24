@@ -1,0 +1,12 @@
+
+http://dee1337.github.io/pages.html
+http://dee1337.github.io/index.html
+http://dee1337.github.io/rss.xml
+http://dee1337.github.io/atom.xml
+http://dee1337.github.io/archive.html
+http://dee1337.github.io/tags.html
+http://dee1337.github.io/sitemap.txt
+http://dee1337.github.io/categories.html
+http://dee1337.github.io/pages/must-have/index.html
+
+http://dee1337.github.io/lessons/2011/12/29/jekyll-introduction
