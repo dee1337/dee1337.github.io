@@ -1,0 +1,52 @@
+
+{% include JB/setup %}
+
+
+<h1>My Bare Minimum: Installs & Configs for Linux Mint 16 (Petra) - 64bit</h1>
+
+<h3>Development: </h3>
+
+<h4>Python-Ide (Spyder), Ruby, Universal-IDEs: Geany (lightweight), Eclipse(powerful + heavy))</h4>
+{% highlight bash %}
+sudo apt-get install spyder geany eclipse ruby1.9.1-dev
+{% endhighlight %}
+
+<h4>Useful Python Libraries and Tools:</h4>
+{% highlight bash %}
+sudo pip install rope BeautifulSoup4 lxml virtualenv 
+{% endhighlight %}
+
+<h4>Prerequisites for Numpy & Matplotlib:</h4>
+{% highlight bash %}
+sudo apt-get install python-dev libfreetype6-dev libpng-dev libjpeg8-dev libfreetype6-dev build-essential
+sudo apt-get install matplotlib
+{% endhighlight %}
+
+<h4>SublimeText 3 install:</h4>
+{% highlight bash %}
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install sublime-text
+{% endhighlight %}
+
+
+<h3>Graphic Design:</h3>
+{% highlight bash %}
+sudo apt-get install krita
+{% endhighlight %}
+
+<h3>system:</h3>
+{% highlight bash %}
+sudo apt-get install htop
+{% endhighlight %}
+
+<h1>settings and configs:</h1>
+<h3>turn off bluetooth after booting up as default:</h3>
+{% highlight bash linenos=table %}
+sudo su 
+sudo gedit /etc/bluetooth/main.conf
+{% endhighlight %}
+>Look for an entry called 'Initially powered = true' and replace true with false.
+
+
+
