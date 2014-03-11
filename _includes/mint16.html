@@ -2,23 +2,28 @@
 
 <h3>Development: </h3>
 
-<h4>Python-Ide (Spyder), Ruby, Universal-IDEs: Geany (lightweight), Eclipse(powerful + heavy)</h4>
+<h4>Python-IDE (Spyder), Ruby, Universal-IDEs: Geany (lightweight), Eclipse(powerful + heavy)</h4>
+installs Spyder (my fav. lightweight full-ide for python), Geany & Addons as alternative to gedit (Linux Mint only allows a very old version of gedit that lacks all the cool features modern versions have),  Eclipse as heavy IDE for bigger projects with support of all programming languages (e.g. C++/C+/C, ObjC, Java, "Android", Python, ... )
+
 {% highlight bash %}
 sudo apt-get install spyder geany geany-plugins eclipse ruby1.9.1-dev
 {% endhighlight %}
 
 <h4>Useful Python Libraries and Tools:</h4>
+installs rope for linting (very useful i.e. for spyder), BeautifulSoup + Lxml for WebScraping, virtualenv (you <u>should</u> know it)
 {% highlight bash %}
 sudo pip install rope BeautifulSoup4 lxml virtualenv 
 {% endhighlight %}
 
 <h4>Prerequisites for Numpy & Matplotlib:</h4>
+installs the requirements that matplotlib needs (if "sudo apt-get install matplotlib" fails) before installing matplotlib itself:
 {% highlight bash %}
 sudo apt-get install python-dev libfreetype6-dev libpng-dev libjpeg8-dev libfreetype6-dev build-essential
 sudo apt-get install matplotlib
 {% endhighlight %}
 
 <h4>SublimeText 3 install:</h4>
+*adds the official SublimeText3 Beta to your repository & installs it:
 {% highlight bash %}
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo apt-get update
@@ -26,6 +31,7 @@ sudo apt-get install sublime-text
 {% endhighlight %}
 
 <h3>Graphic Design:</h3>
+installs krita - a nice & intuitive drawing / vector drawing software with wacom tablet support
 {% highlight bash %}
 sudo apt-get install krita
 {% endhighlight %}
