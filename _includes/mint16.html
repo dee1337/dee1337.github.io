@@ -55,7 +55,17 @@ sudo apt-get install htop
 sudo su 
 sudo gedit /etc/bluetooth/main.conf
 {% endhighlight %}
->Look for an entry called 'Initially powered = true' and replace true with false.
+=>Look for an entry called 'Initially powered = true' and replace true with false.
+<h3>Better Battery Management (Laptops) with <a href="http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html">TLP</a>:</h3>
 
-
-
+1. remove old management tool (if manually installed - basic Mint 16 <u>does not have it</u>):
+{% highlight bash %}
+sudo apt-get remove laptop-mode-tools
+{% endhighlight %}
+2. add TLP repository, install and start TLP (only @ first time after install, you have to do it manually):
+{% highlight bash %}
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+{% endhighlight %}
