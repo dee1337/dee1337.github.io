@@ -32,8 +32,21 @@ sudo apt-get install sublime-text
 {% endhighlight %}
 
 <h4>Security & Penetration</h4>
-Wordpress Penetration: WPScan (needs ruby)
+<ul>
+	<li>Wordpress Penetration: <strong>WPScan</strong> (needs ruby</li>
+	<li>Automated Wlan Attack (WPS,WEP,WPA,WPA2) using the classic tools (aircrack-ng airodump etc. - almost no knowledge required, uff) and optionally mac spoofing: <strong>wifite</strong></li>
+</ul>
 
+
+<h3> Essentials:</h3>
+<h4>Essential tools for compiling from sources</h4>
+{% highlight bash %}
+sudo apt-get install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check
+{% endhighlight %}
+<h4>Multimedia Codecs</h4>
+{% highlight bash %}
+sudo apt-get install libxine1-ffmpeg gxine mencoder mpeg2dec vorbis-tools id3v2 mpg321 mpg123 libflac++6 ffmpeg totem-mozilla icedax tagtool easytag id3tool lame nautilus-script-audio-convert libmad0 libjpeg-progs flac faac faad sox ffmpeg2theora libmpeg2-4 uudeview flac libmpeg3-1 mpeg3-utils mpegdemux liba52-0.7.4-dev libquicktime2
+{% endhighlight %}
 
 
 <h3>Office / PDF / Graphic Design:</h3>
@@ -85,6 +98,13 @@ sudo tlp start
 {% endhighlight %}
 
 <h1>Misc</h1>
+<h3>Simple Screen Recorder</h3>
+capture your desktop via video:
+{% highlight bash %}
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get install simplescreenrecorder
+{% endhighlight %}
 <h3>Google Translator for Command Line:</h3>
 <a href="http://www.soimort.org/google-translate-cli/">soimort.org/google-translate-cli/</a>
 {% highlight bash %}
